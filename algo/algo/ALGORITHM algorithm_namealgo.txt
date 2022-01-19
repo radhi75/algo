@@ -1,0 +1,24 @@
+ALGORITHM algorithm_name
+ VAR     
+ c : CHAR ;     
+ mot : INTEGER ;     
+ voy : INTEGER ;     
+ i : INTEGER; 
+ BEGIN     
+ voy, mot, i = 0 ;      
+ REPEAT         
+ if (c <> '.') then 
+ read (c);          
+ i =i+1; 
+ if (c = 'a' or c = 'e' or c = 'i' or c = 'u' or c = 'y' or c = 'o') 
+ then               
+ voy = voy +1 ; 
+ END if
+ if (c = ' ') then 
+mot = mot + 1 ; 
+END if
+UNTIL (c = '.') ; 
+    Write("The length of the sentence is ",i);
+    Write("The number of words in the sentence is ",mot);
+    Write("he number of vowels in the sentence. is ",voy);
+END 
